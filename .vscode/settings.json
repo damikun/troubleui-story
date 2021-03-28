@@ -1,0 +1,13 @@
+{
+  "eslint.workingDirectories": [ "./" ],
+  "omnisharp.enableEditorConfigSupport": true,
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.semanticHighlighting.enabled": true,
+
+
+  "editor.formatOnSave": true,
+}
