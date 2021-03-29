@@ -15,7 +15,7 @@ export default {
   component: Button,
   argTypes: {
     variant: {
-      description:"Button style variant",
+      description: "Button style variant",
       defaultValue: { summary: "primarygray" },
       control: {
         type: "select",
@@ -33,28 +33,22 @@ export default {
       },
     },
     size: {
-      description:"Button size",
+      description: "Button size",
       defaultValue: { summary: "auto" },
       control: {
         type: "select",
-        options: [
-          "auto",
-          "small",
-          "normal",
-          "medium",
-          "large",
-        ],
+        options: ["auto", "small", "normal", "medium", "large"],
       },
     },
     children: {
-      description:"Text or any react compoennt",
+      description: "Text or any react compoennt",
       defaultValue: { summary: "undefined" },
       control: {
         type: "text",
       },
     },
     iconLeft: {
-      description:"Left Icon prop",
+      description: "Left Icon prop",
       defaultValue: { summary: "undefined" },
       control: {
         type: "select",
@@ -62,7 +56,7 @@ export default {
       },
     },
     iconRight: {
-      description:"Right Icon prop",
+      description: "Right Icon prop",
       defaultValue: { summary: "undefined" },
       control: {
         type: "select",
@@ -70,56 +64,57 @@ export default {
       },
     },
     isloading: {
-      description:"Loading indicator",
+      description: "Loading indicator",
       defaultValue: { summary: false },
       control: {
         type: "boolean",
       },
     },
     disabled: {
-      description:"Button disabled flag",
+      description: "Button disabled flag",
       defaultValue: { summary: false },
       control: {
         type: "boolean",
       },
     },
     turncate: {
-      description:"Turncate on overflow with breake-all",
+      description: "Turncate on overflow with breake-all",
       defaultValue: { summary: true },
       control: {
         type: "boolean",
       },
     },
     iconOnly: {
-      description:"Show only icon and ignor other content",
+      description: "Show only icon and ignor other content",
       defaultValue: { summary: false },
       control: {
         type: "boolean",
       },
     },
     onMobileIconOnly: {
-      description:"For mobile resolution show only icon and ignor other content",
+      description:
+        "For mobile resolution show only icon and ignor other content",
       defaultValue: { summary: false },
       control: {
         type: "boolean",
       },
     },
     transitionTime: {
-      description:"React suspense transition time",
+      description: "React suspense transition time",
       defaultValue: { summary: 500 },
       control: {
         type: "number",
       },
     },
     className: {
-      description:"component style",
+      description: "component style",
       defaultValue: null,
       control: {
         type: "text",
       },
     },
     onClick: {
-      description:"Onclick/Touch callback",
+      description: "Onclick/Touch callback",
       defaultValue: null,
       control: {
         type: "function",
@@ -143,5 +138,5 @@ Buttons.args = {
   transitionTime: 500,
   onMobileIconOnly: undefined,
   className: "",
-  size: "normal"
+  size: "normal",
 };
