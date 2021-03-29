@@ -27,6 +27,7 @@ export const Avatar: React.FC<Avatars.AvatarProps> = ({ ...props }) => {
       <SizeSection />
       <InfoSection />
       <TypeSection />
+      <GroupSection />
     </StoryBody>
   );
 };
@@ -216,6 +217,30 @@ function TypeSection() {
           size="w-12 h-12"
         />
       </StoryFlexBox>
+    </StoryContainer>
+  );
+}
+
+function GroupSection() {
+  return (
+    <StoryContainer name={"Grouping"}>
+      <div className="flex -space-x-3 froup">
+        <StoryFlexBox>
+          <Avatars.default variant="rounded" src={src} size="w-10 h-10" />
+        </StoryFlexBox>
+        <StoryFlexBox>
+          <Avatars.default variant="rounded" src={src} size="w-10 h-10" />
+        </StoryFlexBox>
+        <StoryFlexBox>
+          <Avatars.default variant="rounded" src={src} size="w-10 h-10" />
+        </StoryFlexBox>
+        <StoryFlexBox>
+          <Avatars.default variant="rounded" src={src} size="w-10 h-10" />
+        </StoryFlexBox>
+        <StoryFlexBox>
+          <Avatars.default variant="rounded" src={src} size="w-10 h-10" />
+        </StoryFlexBox>
+      </div>
     </StoryContainer>
   );
 }

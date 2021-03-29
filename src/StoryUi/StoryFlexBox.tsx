@@ -18,8 +18,10 @@ export default function StoryFlexBox({
   const Var = VARIANT[variant] || VARIANT.row;
   return (
     <div className={Var}>
-      <h1 className="font-semibold m-0 tracking-wide text-sm text-gray-400 italic">{`"${label}"`}</h1>
-
+      {
+        label &&  <h1 className="font-semibold m-0 tracking-wide text-sm text-gray-400 italic">{`"${label}"`}</h1>
+      }
+     
       <div className="flex flex-row space-x-2">{children}</div>
     </div>
   );
