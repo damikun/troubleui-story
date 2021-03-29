@@ -8,7 +8,7 @@ export default {
   component: Badge,
   argTypes: {
     variant: {
-      description:"Badge style variant",
+      description: "Badge style variant",
       defaultValue: { summary: "primarydark" },
       control: {
         type: "select",
@@ -35,72 +35,58 @@ export default {
       },
     },
     children: {
-      description:"Text or any react compoennt",
+      description: "Text or any react compoennt",
       defaultValue: { summary: "undefined" },
       control: {
         type: "text",
       },
     },
     size: {
-      description:"Badge size",
+      description: "Badge size",
       defaultValue: { summary: "auto" },
       control: {
         type: "select",
-        options: [
-          "auto",
-          "thin",
-          "small",
-          "normal",
-          "medium",
-          "large",
-        ],
+        options: ["auto", "thin", "small", "normal", "medium", "large"],
       },
     },
     rounding: {
-      description:"Badge rounding",
+      description: "Badge rounding",
       defaultValue: { summary: "medium" },
       control: {
         type: "select",
-        options: [
-          "small",
-          "normal",
-          "medium",
-          "large",
-          "full",
-          "none",
-        ],
+        options: ["small", "normal", "medium", "large", "full", "none"],
       },
     },
     turncate: {
-      description:"Turncate on overflow with breake-all",
+      description: "Turncate on overflow with breake-all",
       defaultValue: { summary: true },
       control: {
         type: "boolean",
       },
     },
     border: {
-      description:"Border",
+      description: "Border",
       defaultValue: { summary: true },
       control: {
         type: "boolean",
       },
     },
     shadow: {
-      description:"Shadow",
+      description: "Shadow",
       defaultValue: { summary: false },
       control: {
         type: "boolean",
       },
     },
     className: {
-      description:"component style",
+      description: "component style",
       defaultValue: null,
       control: {
         type: "text",
       },
     },
     classNameWrapper: {
-      description:"component wrapper style",
+      description: "component wrapper style",
       defaultValue: null,
       control: {
         type: "text",
@@ -113,8 +99,8 @@ const Template: Story<BadgeProps> = (args) => <Badge {...args} />;
 
 export const Badgets = Template.bind({});
 Badgets.args = {
-  children:"dsdsd",
-  size:"small",
+  children: "dsdsd",
+  size: "small",
   variant: "secondaryblue",
   rounding: "medium",
   turncate: true,
