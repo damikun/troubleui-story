@@ -8,16 +8,22 @@ export default {
   component: DropDown,
   argTypes: {
     size: {
-      type: "select",
-      options: ["auto", "small", "medium", "big"],
+      control: {
+        type: "select",
+        options: ["auto", "small", "medium", "big"],
+      },
     },
     position: {
-      type: "select",
-      options: ["topright", "topleft", "bottomright", "bottomleft"],
+      control: {
+        type: "select",
+        options: ["topright", "topleft", "bottomright", "bottomleft"],
+      },
     },
     orientation: {
-      type: "select",
-      options: ["upleft", "upright", "downleft", "downright"],
+      control: {
+        type: "select",
+        options: ["upleft", "upright", "downleft", "downright"],
+      },
     },
     init: {
       description: "Empty label",
@@ -57,7 +63,7 @@ DropDowns.args = {
   size: "medium",
   enabled: true,
   deletable: true,
-  position: "bottomright",
-  orientation: "downleft",
+  position: "bottomleft",
+  orientation: "downright",
   init: "Select role",
 };

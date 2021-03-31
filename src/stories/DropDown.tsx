@@ -60,6 +60,8 @@ export const DropDown: React.FC<DropDowns.StayledDropDownMenuProps> = ({
           </div>
         }
       />
+      <VariantsSection />
+      <TypesSection />
     </StoryBody>
   );
 };
@@ -77,4 +79,164 @@ export function GetProjectRoleColor(value: string) {
     default:
       return " ";
   }
+}
+
+function VariantsSection() {
+  const [role, setRole] = useState("lead");
+
+  const projectUserRoles = useMemo(
+    () =>
+      ProjectRoles.filter((e) => e !== role).map((enity) => {
+        return { value: enity, content: undefined, icon: undefined };
+      }),
+    [ProjectRoles, role]
+  );
+
+  const projectUserRolesSelected = useMemo(() => {
+    return {
+      value: role,
+      content: undefined,
+    };
+  }, [role]);
+
+  const handleRoleUpdate = useCallback(
+    (role: string) => {
+      setRole(role);
+    },
+    [setRole]
+  );
+
+  return (
+    <StoryContainer name={"Variant"}>
+      <StoryFlexBox label={"blue"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={true}
+          deletable={true}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="blue"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={handleRoleUpdate}
+        />
+      </StoryFlexBox>
+      <StoryFlexBox label={"yellow"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={true}
+          deletable={true}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="yellow"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={handleRoleUpdate}
+        />
+      </StoryFlexBox>
+      <StoryFlexBox label={"purple"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={true}
+          deletable={true}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="purple"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={handleRoleUpdate}
+        />
+      </StoryFlexBox>
+      <StoryFlexBox label={"gray"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={true}
+          deletable={true}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="gray"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={handleRoleUpdate}
+        />
+      </StoryFlexBox>
+    </StoryContainer>
+  );
+}
+
+function TypesSection() {
+  const [role, setRole] = useState("lead");
+
+  const projectUserRoles = useMemo(
+    () =>
+      ProjectRoles.filter((e) => e !== role).map((enity) => {
+        return { value: enity, content: undefined, icon: undefined };
+      }),
+    [ProjectRoles, role]
+  );
+
+  const projectUserRolesSelected = useMemo(() => {
+    return {
+      value: role,
+      content: undefined,
+    };
+  }, [role]);
+
+  const handleRoleUpdate = useCallback(
+    (role: string) => {
+      setRole(role);
+    },
+    [setRole]
+  );
+
+  return (
+    <StoryContainer name={"Types"}>
+      <StoryFlexBox label={"standard"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={true}
+          deletable={false}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="blue"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={() => {}}
+        />
+      </StoryFlexBox>
+      <StoryFlexBox label={"deletable"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={true}
+          deletable={true}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="blue"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={() => {}}
+        />
+      </StoryFlexBox>
+      <StoryFlexBox label={"disabled"}>
+        <DropDowns.default
+          size={"medium"}
+          enabled={false}
+          deletable={true}
+          position={"bottomleft"}
+          orientation={"downright"}
+          variant="blue"
+          init={"Select"}
+          data={projectUserRoles}
+          selected={projectUserRolesSelected}
+          onSelect={handleRoleUpdate}
+        />
+      </StoryFlexBox>
+    </StoryContainer>
+  );
 }

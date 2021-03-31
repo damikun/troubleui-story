@@ -3,7 +3,7 @@ import React from "react";
 
 const FLEX_VARIANT = {
   col: "flex-col space-y-5",
-  row: "flex-row space-x-5",
+  row: "flex-row space-x-5 flex-wrap",
 };
 
 type StoryContainerProps = {
@@ -24,9 +24,7 @@ export default function StoryContainer({
       <div className="flex w-full flex-col max-w-7xl space-y-5 pb-5 px-3">
         <h1 className="font-bold m-0 tracking-wide text-2xl">{name}</h1>
 
-        <div className={clsx("flex",Var, className)}>
-          {children}
-        </div>
+        <div className={clsx("flex", Var, className)}>{children}</div>
       </div>
     </div>
   );
