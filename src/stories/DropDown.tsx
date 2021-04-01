@@ -62,6 +62,7 @@ export const DropDown: React.FC<DropDowns.StayledDropDownMenuProps> = ({
       />
       <VariantsSection />
       <TypesSection />
+      <div className="h-screen"></div>
     </StoryBody>
   );
 };

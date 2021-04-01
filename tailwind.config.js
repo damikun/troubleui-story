@@ -3,11 +3,11 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  // purge: {
-  //   preserveHtmlElements: true,
-  //   enabled: true,
-  //   content: ["./src/**/*.{ts,tsx}"],
-  // },
+  purge: {
+    preserveHtmlElements: true,
+    enabled: true,
+    content: ["./src/**/*.{ts,tsx}"],
+  },
 
   theme: {
     filter: {
