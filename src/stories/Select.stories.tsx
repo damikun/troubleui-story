@@ -29,13 +29,6 @@ export default {
         type: "boolean",
       },
     },
-    disabled: {
-      description: "Disable",
-      defaultValue: false,
-      control: {
-        type: "boolean",
-      },
-    },
     isProcessing: {
       description: "IsProcessing",
       defaultValue: false,
@@ -71,7 +64,6 @@ const Template: Story<SelectProps> = (args) => <Select {...args} />;
 
 export const Selects = Template.bind({});
 Selects.args = {
-  disabled: false,
   controldisabled: false,
   searchable: true,
   border: true,
