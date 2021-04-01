@@ -4,6 +4,12 @@
 ## Exclude UI components itself...
 /src/UIComponents
 ./src/UIComponents
+
+/src/Hooks
+./src/Hooks
+
+/my-app
+./my-app
 ###################
 # compiled source #
 ###################
