@@ -1,8 +1,9 @@
 {
-  "name": "StoryBook-TroubleUi",
-  "homepage": "http://damikun.github.io/troubleui-story",
+  "homepage": "https://damikun.github.io/troubleui-story",
+  "name": "troubleui-story",
   "version": "0.1.0",
-  "private": true,
+  "author": "Dalibor Kundrat",
+  "private": false,
   "dependencies": {
     "@storybook/storybook-deployer": "^2.8.7",
     "@testing-library/jest-dom": "^5.11.4",
