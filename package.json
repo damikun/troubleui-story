@@ -39,7 +39,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "ck": "build-storybook -s public",
     "build:css": "postcss src/CSS/Tailwind.css -o src/CSS/App.css ",
-    "deploy-storybook": "gh-pages -d public"
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [

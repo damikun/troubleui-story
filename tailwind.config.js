@@ -152,7 +152,7 @@ module.exports = {
     gradientColorStops: true,
   },
   variants: {
-    filter: ["responsive", "hover"], // defaults to ['responsive']
+    filter: ["responsive", "hover", `group-hover`], // defaults to ['responsive']
     backdropFilter: ["responsive"], // defaults to ['responsive']
     gradientColorStops: [
       "responsive",
